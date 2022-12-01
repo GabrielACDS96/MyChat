@@ -33,7 +33,7 @@ namespace MyChat.API.Controllers
             return Ok(messageCommand);
         }
 
-        [HttpGet("StockQuota/{stockCode:string}")]
+        [HttpGet("StockQuota/{stockCode}")]
         public async Task<string> GetStockQuota(string stockCode)
         {
             var stockQuotaCommand = new StockQuotaCommand { StockCode = stockCode };
